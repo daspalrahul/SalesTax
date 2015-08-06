@@ -11,7 +11,7 @@ public class Basket {
         this.itemList = itemList;
     }
 
-    public double finalPrice() {
+    public double finalAmount() {
         double amount = 0;
         for (Item item : itemList) {
             amount += calculateSaleTax(item);

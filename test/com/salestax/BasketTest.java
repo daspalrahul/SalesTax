@@ -22,6 +22,6 @@ public class BasketTest {
         Mockito.when(item.isSalesTaxable()).thenReturn(false);
         Mockito.when(item.totalPrice()).thenReturn(7.0).thenReturn(7.0).thenReturn(7.0);
 
-        assertEquals(7.0, basket.finalPrice(), 0.009);
+        assertEquals(7.0, basket.finalAmount(), 0.009);
     }
 }
