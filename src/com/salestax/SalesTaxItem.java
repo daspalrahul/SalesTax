@@ -8,7 +8,7 @@ public class SalesTaxItem {
         this.item = item;
     }
 
-    public double priceAfterSalesTax(double salesTax) {
-        return item.totalPrice() + (item.totalPrice() * salesTax);
+    public double salesTax(double salesTax) {
+        return item.totalPrice() * salesTax;
     }
 }
