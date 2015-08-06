@@ -9,7 +9,7 @@ public class ImportedTaxItem {
         this.item = item;
     }
 
-    public double priceAfterImportTax(double importTax) {
-        return item.totalPrice() + (item.totalPrice() * importTax);
+    public double importTax(double importTax) {
+        return item.totalPrice() * importTax;
     }
 }

@@ -14,8 +14,8 @@ public class ImportedTaxItemTest {
         Item item = Mockito.mock(Item.class);
         ImportedTaxItem importedTaxItem = new ImportedTaxItem(item);
 
-        Mockito.when(item.totalPrice()).thenReturn(7.0).thenReturn(7.0);
+        Mockito.when(item.totalPrice()).thenReturn(7.0);
 
-        assertEquals(7.35, importedTaxItem.priceAfterImportTax(.05), 0);
+        assertEquals(.35, importedTaxItem.importTax(.05), 0.009);
     }
 }
