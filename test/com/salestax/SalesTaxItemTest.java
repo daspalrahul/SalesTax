@@ -16,7 +16,7 @@ public class SalesTaxItemTest {
 
         Mockito.when(item.totalPrice()).thenReturn(7.0).thenReturn(7.0);
 
-        assertEquals(7.7, salesTaxItem.priceAfterSalesTax(), 0);
+        assertEquals(7.7, salesTaxItem.priceAfterSalesTax(.1), 0);
     }
 
 }
