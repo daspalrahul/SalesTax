@@ -1,11 +1,11 @@
 package com.salestax;
 
-public class NonExemptSalesTaxItem {
+public class SalesTaxItem {
 
     private Item item;
     private int salesTax;
 
-    public NonExemptSalesTaxItem(Item item) {
+    public SalesTaxItem(Item item) {
         this.item = item;
         salesTax = 10;
     }
