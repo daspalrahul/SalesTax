@@ -21,7 +21,8 @@
         <junit haltonfailure="true" printsummary="true" showoutput="yes">
             <test name="com.salestax.ItemTest"/>
             <test name="com.salestax.SalesTaxItemTest"/>
-            <test name="com.salestax.ImportedTaxItem"/>
+            <test name="com.salestax.ImportedTaxItemTest"/>
+            <test name="com.salestax.BasketTest"/>
             <classpath>
                 <pathelement location="out"/>
                 <path refid="classpath"/>
